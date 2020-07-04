@@ -1,0 +1,1 @@
+{"file": "public class Test {\n    public static void main(String[] args) {\n        System.out.println(\"Congratulations for making it work!\");\n    }\n}", "output": ""}

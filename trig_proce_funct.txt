@@ -1,0 +1,162 @@
+delimiter $
+create trigger trigger_quantity_arrived after insert on arrival for each row
+begin
+	update product
+	set item_stock = item_stock + new.arriving_quantity
+	where product_id = new.product_id;
+end$
+
+-----------------------------------------
+
+delimiter $
+create trigger discount after insert on sell for each row
+begin
+	declare value int; 
+	set value = new.bill_amount;
+	update bill
+	set bill_amount -= bill_amount*10 
+	when new.value>=1000
+	where product_id = new.product_id;
+end$
+
+-------------------
+Delimiter $
+create trigger check_ after insert on sell for each row
+begin
+declare msg varchar(150);
+declare chk int;
+set chk = 20;
+IF(select stock_(new.product_id) < chk)
+THEN
+	set msg = "Stock is less, need to have more";
+	signal sqlstate '45001' set message_text = msg;
+END IF;
+end$
+
+--------------------------------------------
+--------------------------
+
+DELIMITER $$
+CREATE PROCEDURE ArrivalOrderByStatus(
+ IN orderStatus VARCHAR(25))
+BEGIN
+ SELECT *
+ FROM orders
+ WHERE status = orderStatus;
+END$$
+DELIMITER ;
+------------------------------------
+DELIMITER $
+create procedure max_bill()
+begin
+	select customer_id,sum(bill_amount) from bill group by bill.customer_id  order by sum(bill_amount) desc limit 1;
+end $
+
+call max_bill();
+------------------------------------------
+select product.product_name,sell.product_id as p, sum(sell_quantity) as Sum1
+from sell,product 
+where product.product_id = sell.product_id
+group by sell.product_id order by Sum1 desc limit 1;
+
+------------------------------------
+DELIMITER $
+create procedure max_10_customers(IN date_ date)
+begin
+	select customer_id,sum(bill_amount) from bill
+	where bill_date = date_
+	group by bill.customer_id  order by sum(bill_amount) desc limit 10;
+end $
+
+call max_bill();
+---------------------------------
+Delimiter $
+create procedure Return_product_1 ()
+Begin
+	select product_id , sum(quantity_return), return_date  , product_name  from return_ inner join product using(product_id) group by product_id ;
+
+end $	
+----------------------------------------
+select product.product_name,sell.product_id as p, sum(sell_quantity) as Sum1
+from sell,product 
+where product.product_id = sell.product_id
+group by sell.product_id order by Sum1 asc limit 1;
+
+----------------
+Delimiter $
+create procedure Return_prod_date ( in d1 date , in d2 date)
+Begin
+	select product_id , quantity_return, return_date  , product_name  from return_ inner join product using(product_id) where return_date >= d1 and return_date<=d2 ;
+	
+end $	
+
+-------------------------------------
+
+DELIMITER $$
+CREATE PROCEDURE ArrivalOrderByStatus(
+ IN orderStatus VARCHAR(25))
+BEGIN
+ SELECT *
+ FROM orders
+ WHERE status = orderStatus;
+END$$
+DELIMITER ;
+
+CALL ArrivalOrderByStatus('Shipped');
+
+------------------------------
+
+CALL ArrivalOrderByStatus('Shipped');
+------------------------------------
+set @total = 0;
+    set @i = 1;
+DELIMITER $
+create trigger bill_gen after insert on sell for each row
+begin
+    declare sum_ int;
+    set sum_ = new.PPQ * new.sell_quantity;
+    if new.flag_c = 0 THEN
+        SET @total = @total + sum_;
+        update product 
+	    set item_stock = item_stock - new.sell_quantity
+	    where product_id = new.product_id;
+    else
+        SET @total = @total + sum_;
+        IF @total > 10000 THEN
+        SET @total = @total - @total*0.1;
+        end if;
+        update product 
+	    set item_stock = item_stock - new.sell_quantity
+	    where product_id = new.product_id;
+        insert into bill values(new.customer_id,@i,new.product_id,new.sell_quantity,@total,new.sell_date);
+        set @i = @i + 1;
+    end IF;
+end$
+---------------------------------------------------------------------------------------------------------------------
+BILL AS PER DATE
+DELIMITER $ 
+create procedure customers_by_date(IN date_of_bill Date)
+Begin
+select *
+from bill
+where bill_date = date_of_bill;
+end$
+-------------------------------------------------------------------------------------------------
+PROFIT PER DAY
+DELIMITER $
+create procedure profit_pd(in date_of_bill date, out tprofit_pd int)
+begin
+declare profit_pp int;
+declare  s_date date;
+declare s_qty int;
+DECLARE finished int;
+declare cur1 cursor for select product.profit_pp, sell.sell_date, sell.sell_quantity from sell 
+inner join product on sell.product_id = product.product_id;
+DECLARE CONTINUE HANDLER FOR NOT FOUND SET finished = 1;
+while finished = 0 do
+fetch cur1 into profit_pp, s_date, s_qty;
+if s_date = date_of_bill THEN
+set tprofit_pd = tprofit_pd + profit_pp*s_qty;
+end if;
+end while;
+end$

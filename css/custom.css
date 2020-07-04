@@ -1,0 +1,200 @@
+.container {
+    margin: 0 auto;
+    max-width: 100%;
+    width: 97%;
+}
+
+.button {
+    background-color: Transparent!important;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+
+@media only screen and (min-width: 601px) {
+    .container {
+        width: 97%
+    }
+}
+
+@media only screen and (min-width: 993px) {
+    .container {
+        width: 97%
+    }
+}
+
+p.fl {
+display: none;
+}
+.align-center{
+margin: 5px;
+}
+.align-center div {
+display: block;
+white-space: nowrap;
+text-overflow: ellipsis;
+overflow: hidden;
+}
+.nd2-card:hover,.f1:hover{
+background-color: rgba(187, 222, 251, 0.4);
+cursor: pointer;
+}
+.nd2-card:focus,.f1:focus
+{
+    background-color:rgb(187,222,251);
+}
+.lessmargin{
+    margin-left: -4.75rem !important;
+}
+
+.data {
+	margin-top: 25px;
+
+}
+
+.data .grid {
+	border-radius: 3px;
+	background-color: #faf9f8;
+	width: 250px;
+	height: 100px;
+	list-style-type: none;
+	margin: 4px;
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	padding: 0.3em;
+	cursor: pointer;
+	box-sizing: border-box;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	transition: 0.3s background-color;
+	align-items: flex-start
+}
+
+.data .grid:hover {
+	background-color: rgba(139,199,248,0.5) /*rgba(187, 222, 251, 0.8)*/;
+
+}
+
+.data .grid a {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.data .grid .name {
+	color: #000;
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 20px;
+	width: 170px;
+	white-space: nowrap;
+	display: inline-block;
+	position: absolute;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	top: 35px;
+}
+
+.data .grid .name1 {
+	color: #000;
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 20px;
+	width: 170px;
+	white-space: nowrap;
+	display: inline-block;
+	position: absolute;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	top: 35px;
+	left: 78px;
+}
+
+.data .grid .details {
+	color: #04324E;
+	font-size: 13px;
+	font-weight: 400;
+	width: 170px;
+	height: 10px;
+	top: 54px;
+	white-space: nowrap;
+	position: absolute;
+	display: inline-block;
+	left: 78px;
+}
+.data .grid .time {
+	color: #04324E;
+	font-size: 13px;
+	font-weight: 400;
+	width: 170px;
+	height: 10px;
+	top: 70px;
+	white-space: nowrap;
+	position: absolute;
+	display: inline-block;
+	left: 78px;
+}
+.icon img{
+	/*width: 2.5em;
+	height: 3em;
+	line-height: 3em;*/
+	border-radius: 0.25em;
+	
+	
+	margin-top: 1em;
+	margin-bottom: 1.5em;
+	top: 0;
+	left: 0;
+	margin-right:0.5em;
+	position: absolute;
+	overflow: hidden;
+	
+}
+
+footer.page-footer {
+    width: 100%;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    padding-right: 10px;
+    padding-left: 250px;
+    bottom: 0;
+    position: relative;
+    background-color: #7f1214;
+}
+
+#loadingMask
+{
+ position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+#toast-container {
+  top: auto !important;
+  right: auto !important;
+  bottom: 10%;
+  left:35%;
+}
+.img {
+    display: block;
+    margin: auto;
+	padding-top:20px;
+}
+.bold1{
+	display: flex;
+	align-items: center;
+	height: 60px;
+}
+.bold1 a{
+	font-weight: 600px;
+	/* display:table-cell!important; */
+	
+}

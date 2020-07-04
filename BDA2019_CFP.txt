@@ -1,0 +1,133 @@
+Call for Papers, Tutorials and Workshops
+Seventh International Conference on Big Data Analytics (BDA2019) 
+December 17-20, 2019, Gujarat, India
+Website: http://bda2019.org
+
+The 7th International Conference on Big Data Analytics (BDA2019) will be held during December 17-20, 2019 at Ahmedabad University, India.
+BDA2019 provides an international forum for researchers and industry practitioners to share their original research results, practical experiences and 
+thoughts on big data from different perspectives including storage models, data access, computing paradigms, analytics, information sharing and 
+privacy, redesigning mining algorithms, open issues and future research trends.
+
+BDA 2019 invites original, technically sound, high-quality research papers proposing novel solutions addressing the problems related to big data analytics 
+as well as case studies and practical experiences with big data. Major topics of interest to the conference include, but are not limited to:
+
+* Analytics as a Service 
+* Architectural Design for Big Data 
+* Big Data Analytics for Governance
+* Conceptual/cognitive/programming Models for Big data analytics 
+* Clustering of Big Data
+* Data Fusion and Multi Modal Analytics 
+* Data Models for Big Data Analytics
+* Domain-specific Analytics 
+* Index Structures for Big Data Analytics 
+* Interaction Design for Exploratory Analytics 
+* Machine Learning techniques for Big Data 
+* Large-scale recommendation systems and graph analysis * Model Discovery from Big Data
+* NoSQL and non-standard Data Models
+* Physical Data Organization for Big Data
+* Predictive Modelling 
+* Pattern and Rule Mining from Big Data
+* Scalability and Performance issues 
+* Security, privacy and legal issues specific to big data 
+* Semantics of Big Data
+* Streaming Data Analytics 
+* Summarization and Materialized views
+* Topic Modelling 
+* Unstructured and Semi-structured Data Mining
+
+Publication:  The proceedings of BDA2019 will be published in Springer LNCS series (approval pending)
+
+Research track submissions:  Each paper should contain an abstract of approximately 300 words having a page limit of 20 pages in the LNCS style. The submissions including the title page, references and appendix. For preparing the manuscript, please see instructions for authors by Springer, in the Lecture Notes in Computer Science series (LNCS)  http://www.springer.com/computer/lncs?SGWID=0-164-6-793341-0  At least one author of the accepted paper must register for the conference.
+LaTeX and Word Templates & Submission Guidelines: http://www.springer.com/computer/lncs?SGWID=0-164-6-793341-0
+At least one author of each paper must be registered for the conference in order for the paper to be published in the proceedings. Presentation of an accepted paper at the conference is a requirement of publication. Any paper that is not presented at the conference will not be included in Springer LNCS series.
+
+Easychair Submission link: https://easychair.org/my/conference?conf=bda20190
+
+Journal Special Issue: Selected papers from BDA conference will be invited to submit extended versions of their paper for possible publications in Special Issue of Distributed and Parallel Databases journal.
+
+Important Dates: 
+Abstract submission: July 5, 2019, 23:59 PST 
+Full paper submissions: July 19, 2019, 23:59 PST 
+Research paper notifications: September 16, 2019, 23:59 PST 
+Camera-ready submission: October 1, 2019, 23:59 PST
+
+The call for tutorials is available at http://bda2019.org/pages/tutalks.html
+The call for workshops is available at http://bda2019.org/pages/workshops.html
+
+Chief Patrons
+Pankaj Chandra, Vice Chancellor, Ahmedabad University
+Sudhir Jain, Director, IIT, Gandhinagar
+
+General Chair
+Sanjay Chaudhary, Ahmedabad University, India
+
+Steering Committe
+Chair: P. Krishna Reddy, IIIT Hyderabad, India 
+Members: S.K. Gupta, IIT Delhi, India
+Srinath Srinivasa, IIIT Bangalore, India 
+Krithi Ramamritham, IIT Bombay, India 
+Sanjay Kumar Madria, Missouri University of Science and Technology, USA
+Masaru Kitsuregawa, University of Tokyo, Japan
+Raj K. Bhatnagar, University of Cincinnati, USA 
+Vasudha Bhatnagar, University of Delhi, India
+Mukesh Mohania, IBM Research, Australia 
+H.V. Jagadish, University of Michigan, USA 
+Ramesh Kumar Agrawal, Jawaharlal Nehru University, India Divyakant Agrawal, University of California at Santa Barbara, USA 
+Arun Agarwal, University of Hyderabad, India
+Subhash Bhalla, The University of Aizu, Japan 
+Jaideep Srivastava, University of Minnesota, USA 
+Anirban Mondal, Ashoka University, India
+Sharma Chakravarthy, The University of Texas at Arlington, USA
+
+Program Committee Chairs
+Sanjay Kumar Madria, Missouri University of Science and Technology, USA
+Philippe Fournier-Viger, Herbin Institute of Technology (Shenzhen), China
+
+Organizing Chair
+Mehul Raval, Pandit Deendayal Petroleum University, India
+Kumar Shashi Prabh, Ahmedabad University, India
+
+Sponsorship Chair
+Anil Roy, DA-IICT, India
+
+Financial Chair
+Dhaval Patel, Ahmedabad University, India
+
+Publication Chair
+P. Krishna Reddy, IIIT Hyderabad, India
+
+Workshop Chair
+Srikrishnan Divakaran, Ahmedabad University, India
+
+Tutorial Chairs
+Mukesh Mohania, IBM, Australia
+Takahiro Hara, Osaka University, Japan
+
+Publicity Chairs
+Shelly Sachdeva, NIT Delhi, India
+M. T. Savaliya, Vishwakarma Government Engineering College, India 
+
+Panel Chairs
+TBD
+
+Website Chair
+Pratik Trivedi, Ahmedabad University, India
+
+Organizing Committee
+Barbara Moraswka, Ahmedabad University, India
+Anurag Lakhlani, Ahmedabad University, India
+C K Bhensdadia, Dharmsinh Desai University, India
+Amit Ganatra, CHARUSAT, India
+Sanjay Sampat, Government Polytechnic College - Surat, India
+Rahul Bhathiji, Ahmedabad University, India
+Aman Dave, Ahmedabad University, India
+Kruti Yadav, Ahmedabad University, India
+Manav Shah, Ahmedabad University, India
+
+Contact: 
+Admin Office,
+School of Engineering and Applied Science,  
+Ahmedabad University, Navrangpura, 
+Ahmedabad - 380009
+E-mail: bda2019conference@gmail.com
+Phone: +91 79 61911111/ 61911112
